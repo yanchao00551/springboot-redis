@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.power.modules.app.dao.UserDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.power.modules.app.entity.UserEntity" id="userMap">
+        <result property="userId" column="user_id"/>
+        <result property="username" column="username"/>
+        <result property="mobile" column="mobile"/>
+        <result property="password" column="password"/>
+        <result property="userStatus" column="user_status"/>
+        <result property="userHeadimg" column="user_headimg"/>
+        <result property="isSystem" column="is_system"/>
+        <result property="isMember" column="is_member"/>
+        <result property="userTel" column="user_tel"/>
+        <result property="userTelBind" column="user_tel_bind"/>
+        <result property="userQq" column="user_qq"/>
+        <result property="qqOpenid" column="qq_openid"/>
+        <result property="qqInfo" column="qq_info"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="userEmailBind" column="user_email_bind"/>
+        <result property="wxOpenid" column="wx_openid"/>
+        <result property="wxIsSub" column="wx_is_sub"/>
+        <result property="wxInfo" column="wx_info"/>
+        <result property="otherInfo" column="other_info"/>
+        <result property="currentLoginIp" column="current_login_ip"/>
+        <result property="currentLoginType" column="current_login_type"/>
+        <result property="lastLoginIp" column="last_login_ip"/>
+        <result property="lastLoginType" column="last_login_type"/>
+        <result property="loginNum" column="login_num"/>
+        <result property="realName" column="real_name"/>
+        <result property="sex" column="sex"/>
+        <result property="location" column="location"/>
+        <result property="nickName" column="nick_name"/>
+        <result property="wxUnionid" column="wx_unionid"/>
+        <result property="qrcodeTemplateId" column="qrcode_template_id"/>
+        <result property="wxSubTime" column="wx_sub_time"/>
+        <result property="wxNotsubTime" column="wx_notsub_time"/>
+        <result property="regTime" column="reg_time"/>
+        <result property="currentLoginTime" column="current_login_time"/>
+        <result property="lastLoginTime" column="last_login_time"/>
+        <result property="birthday" column="birthday"/>
+    </resultMap>
+</mapper>
